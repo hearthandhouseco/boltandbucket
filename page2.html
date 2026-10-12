@@ -1,19 +1,134 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Other page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover practical work gear and jobsite-ready finds at BoltAndBucket.">
+  <title>Work Gear | BoltAndBucket</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .work-product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background: #202020;
+  color: #f5f5f5;
+}
+
+.work-product-card img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.work-product-card-content {
+  padding: 20px;
+}
+
+.work-product-card h2 {
+  color: #f5c400;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.work-product-card p {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.work-product-card .product-button {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 12px 18px;
+  background: #f5c400;
+  color: #171717;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.work-product-card .product-button:hover {
+  background: #ffda38;
+}
+
+    .category-disclosure {
+      margin: 0 0 28px;
+      padding: 14px 16px;
+      background: #292929;
+      border-left: 4px solid #f5c400;
+      color: #eee;
+      line-height: 1.6;
+      font-size: 0.9rem;
+    }
+
+    .category-back {
+      display: inline-block;
+      margin-top: 32px;
+      color: #f5c400;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">B&amp;B</span>
+        <span>BOLT AND BUCKET</span>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Work Gear</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="category-page">
+    <section class="category-intro">
+      <h1>Work Gear &amp; Audio</h1>
+      <p>Practical gear for long shifts, busy workshops, and life on the go. Explore useful finds selected for hands-on people.</p>
+    </section>
+
+    <p class="category-disclosure">
+      <strong>Affiliate disclosure:</strong> BoltAndBucket may earn a commission when you purchase through certain links on this page, at no additional cost to you.
+    </p>
+
+    <section class="category-products" aria-label="Work gear products">
+      <article class="work-product-card">
+        <img
+          src="https://m.media-amazon.com/images/I/61fe6qY8i0L._AC_SL1000_.jpg"
+          alt="DEWALT open-ear wireless Bluetooth headphones with earhooks"
+          loading="lazy"
+        >
+        <div class="category-card-content">
+          <h2>DEWALT Heavy Duty Open-Ear Bluetooth Headphones</h2>
+          <p>Bluetooth 5.3, a secure earhook fit, physical control buttons, IP55-rated earbuds, and up to 44 hours of total runtime with the charging case, according to the product description.</p>
+          <a
+            class="product-button"
+            href="https://link.amazon/B0gd5Lqxt"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+          >View Product</a>
+        </div>
+      </article>
+    </section>
+
+    <a class="category-back" href="index.html">← Back to BoltAndBucket Home</a>
+  </main>
+
+  <footer>
+    <p>© 2026 BoltAndBucket. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
