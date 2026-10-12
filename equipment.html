@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipment | BoltAndBucket</title>
+  <meta name="description" content="Heavy-duty equipment and practical gear for the job site, farm, and garage.">
+  <style>
+    :root {
+      --bg: #171817;
+      --panel: #222321;
+      --gold: #e2ad35;
+      --text: #f4f1e9;
+      --muted: #b9b8b0;
+      --border: #41413b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
+      background: #111210;
+      border-bottom: 1px solid var(--border);
+      padding: 18px 5%;
+    }
+
+    .nav-wrap {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      background: var(--gold);
+      color: #171817;
+      font-weight: 900;
+      padding: 8px;
+      min-width: 48px;
+      min-height: 42px;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: var(--gold); }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 48px 22px 70px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.05;
+      margin: 10px 0 16px;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      max-width: 650px;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .affiliate-note {
+      font-size: 12px;
+      color: var(--muted);
+      border-left: 3px solid var(--gold);
+      padding-left: 12px;
+      margin: 28px 0;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .product-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      background: #fff;
+    }
+
+    .product-info { padding: 22px; }
+
+    .product-info h2 {
+      font-size: 23px;
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+
+    .product-info p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .specs {
+      padding-left: 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .specs li { margin-bottom: 6px; }
+
+    .fitment {
+      border-left: 3px solid var(--gold);
+      padding: 10px 12px;
+      background: #191a18;
+      font-size: 13px;
+    }
+
+    .product-button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 12px 18px;
+      background: var(--gold);
+      color: #171817;
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .product-button:hover { background: #f0c45c; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 5%;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    footer a { color: var(--gold); }
+
+    @media (max-width: 520px) {
+      .container { padding-top: 32px; }
+      .nav-wrap { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">B&amp;B</span>
+        <span>BOLT AND BUCKET</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="tools.html">Tools</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="page2.html">Work Gear</a>
+        <a href="garage.html">Garage &amp; DIY</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="eyebrow">02 / Heavy-Duty Essentials</p>
+    <h1>Equipment</h1>
+    <p class="intro">
+      Equipment worth a closer look. Explore practical attachments and
+      heavy-duty gear built for work around the property, farm, and job site.
+    </p>
+
+    <p class="affiliate-note">
+      BoltAndBucket may earn a commission when you purchase through links
+      on this page, at no additional cost to you.
+    </p>
+
+    <section class="product-grid" aria-label="Equipment products">
+      <article class="product-card">
+        <img
+          class="product-image"
+          src="https://m.media-amazon.com/images/I/51E93B+H7rL._AC_SL1000_.jpg"
+          alt="John Deere compatible pallet fork frame attachment"
+          loading="lazy"
+        >
+
+        <div class="product-info">
+          <p class="eyebrow">Loader Attachments</p>
+          <h2>John Deere Pallet Fork Frame Attachment</h2>
+
+          <p>
+            A heavy-duty attachment designed for lifting and moving materials,
+            with removable hay spear sleeves, pallet fork blades, and a
+            built-in trailer receiver hitch.
+          </p>
+
+          <ul class="specs">
+            <li>Listed capacity: 4,000 pounds</li>
+            <li>50-inch frame length and 29.5-inch height</li>
+            <li>Adjustable fork width: 11.75 to 43 inches</li>
+            <li>Includes two 42-inch Class II pallet fork blades</li>
+            <li>Attachment weight: 120 pounds</li>
+            <li>2-inch trailer receiver hitch</li>
+          </ul>
+
+          <p class="fitment">
+            <strong>Check compatibility:</strong> Designed for specified
+            John Deere 200, 300, 400, and 500 series loaders. It does not fit
+            Global/Euro-style or universal skid-steer-style mounts. Verify
+            your loader model and mounting configuration before ordering.
+          </p>
+
+          <a
+            class="product-button"
+            href="https://link.amazon/B0ex0B4gV"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+          >View Product ↗</a>
+        </div>
+      </article>
+    </section>
+    
+    <article class="product-card">
+        <img
+          class="product-image"
+          src="https://m.media-amazon.com/images/I/81L781bAFSL._AC_SL1500_.jpg"
+          alt="Heavy-duty tractor-mounted chainsaw holder and protective scabbard"
+          loading="lazy"
+        >
+
+        <div class="product-info">
+          <p class="eyebrow">Tractor &amp; Utility Attachments</p>
+          <h2>Heavy-Duty Tractor Chainsaw Holder</h2>
+
+          <p>
+            Keep your chainsaw secured and protected during transport and
+            storage. This heavy-duty carbon-steel carrier features an
+            openable bracket for easier loading and unloading, plus a
+            protective scabbard designed for rugged outdoor use.
+          </p>
+
+          <ul class="specs">
+            <li>Heavy-duty construction weighing approximately 13 pounds</li>
+            <li>Designed for chainsaws up to 20 inches with the scabbard</li>
+            <li>Detachable bottom extension accommodates longer saws</li>
+            <li>Protective padding helps prevent vehicle scratches</li>
+            <li>Drainage holes help water escape from the scabbard</li>
+            <li>Suitable for compatible tractors, ATVs, UTVs, and utility vehicles</li>
+          </ul>
+
+          <p class="fitment">
+            <strong>Check compatibility:</strong> Confirm your machine's
+            mounting points, available clearance, and chainsaw dimensions
+            before ordering. Installation hardware and requirements should
+            be verified with the product listing.
+          </p>
+
+          <a
+            class="product-button"
+            href="https://link.amazon/B055aSjA8"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+          >View Product ↗</a>
+        </div>
+      </article>
+
+      
+      <article class="product-card">
+        <img
+          class="product-image"
+          src="https://m.media-amazon.com/images/I/71ycNh0DpCL._AC_SL1500_.jpg"
+          alt="Adjustable magnetic convex mirror for tractors and utility equipment"
+          loading="lazy"
+        >
+
+        <div class="product-info">
+          <p class="eyebrow">Tractor &amp; Visibility Gear</p>
+          <h2>Omgro Magnetic Tractor Mirror</h2>
+
+          <p>
+            Add an adjustable view of your surroundings with this magnetic
+            convex mirror. Its 2.6-inch magnetic base is designed for
+            convenient mounting on compatible equipment, helping operators
+            improve visibility around their machines.
+          </p>
+
+          <ul class="specs">
+            <li>2.6-inch magnetic mounting base</li>
+            <li>Adjustable mirror angle and position</li>
+            <li>Convex mirror design for a wider field of view</li>
+            <li>Designed for compatible tractors and utility equipment</li>
+            <li>Listed applications include dozers, lift trucks, lawn mowers, golf carts, and forklifts</li>
+            <li>Designed for agricultural and industrial environments</li>
+          </ul>
+
+          <p class="fitment">
+            <strong>Before ordering:</strong> Check that the mounting surface
+            is suitable for a magnetic base and confirm the mirror's
+            compatibility with your equipment. Do not rely on a mirror alone
+            to eliminate blind spots or replace safe operating practices.
+          </p>
+
+          <a
+            class="product-button"
+            href="https://link.amazon/B0g3zeFHv"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+          >View Product ↗</a>
+        </div>
+      </article>
+
+
+  </main>
+
+  <footer>
+    <p>BOLT AND BUCKET · GOOD GEAR. NO GUESSWORK.</p>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+
+</body>
+</html>
