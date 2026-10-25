@@ -872,3 +872,31 @@ img {
     padding: 18px;
   }
 }
+
+/* LAUNCH affiliate banner */
+
+.garage-feature .launch-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.garage-feature .launch-banner a {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.garage-feature .launch-banner img {
+  display: block;
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 6px;
+  
+}
